@@ -6,14 +6,7 @@
 //
 import UIKit
 
-final class LoginId {
-    
-    static var number = 1
-
-}
-
-
-class RootViewContorller {
+final class RootViewContorller {
     
     static let root: RootViewContorller = .init()
     private init(){}
@@ -21,8 +14,8 @@ class RootViewContorller {
     private (set) var window: UIWindow?
     
     func showInitialView(window: UIWindow?) {
-       
-        if LoginId.number == 1 {
+        
+        if !UserDefaults.standard.isLogined {
             let vc = FirstViewContorller.instanced()
             let nav = UINavigationController(rootViewController: vc)
             window?.rootViewController = nav
@@ -31,8 +24,8 @@ class RootViewContorller {
             let nav = UINavigationController(rootViewController: vc)
             window?.rootViewController = nav
         }
-        
         window?.makeKeyAndVisible()
         self.window = window
     }
+    
 }
