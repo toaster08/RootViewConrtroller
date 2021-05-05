@@ -32,6 +32,11 @@ final class RootViewContorller {
         let vc = SecondViewContorller.instanced()
         show(from: from, next: vc)
     }
+    
+    func showFirst(from:UIViewController){
+        let vc = SecondViewContorller.instanced()
+        show(from: from, next: vc)
+    }
 
 }
     
