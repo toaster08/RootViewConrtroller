@@ -28,4 +28,28 @@ final class RootViewContorller {
         self.window = window
     }
     
+    func showSecond(from:UIViewController){
+        let vc = SecondViewContorller.instanced()
+        show(from: from, next: vc)
+    }
+
 }
+    
+private extension RootViewContorller {
+  //animatedはデフォルトとしてtrueに指定
+  func show(from: UIViewController, next: UIViewController, animated: Bool = true) {
+    if let nav = from.navigationController {
+      //pushViewControllerはnavigationControllerでなければ使うことができない
+      //そのため、if letで存在を確かめている
+      //.navigationControllerはUINavigationController class
+      //UINavigationControllerはUIViewControllerを継承している
+      //そのためparameterとして取得できる
+      nav.pushViewController(next, animated: animated)
+    } else {
+      //NavigationControllerによらないtransition
+      from.present(next, animated: animated, completion: nil)
+    }
+  }
+}
+
+

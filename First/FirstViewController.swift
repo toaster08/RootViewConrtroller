@@ -14,4 +14,13 @@ class FirstViewContorller: UIViewController {
       return vc
     }
     
+    @IBOutlet private weak var nextButton: UIButton!{
+        didSet{
+            nextButton.addTarget(self, action: #selector(tapNextButton(_:)), for: .touchUpInside)
+        }
+    }
+
+    @objc func tapNextButton(_ sender:UIResponder){
+        RootViewContorller.root.showSecond(from: self)
+    }
 }

@@ -9,7 +9,6 @@ import UIKit
 
 extension UIStoryboard {
     
-//    FirstViewControllerのイニシャルビューとしてイニシャライズ
     static var firstViewController: FirstViewContorller {
         UIStoryboard.init(name: "First", bundle: nil).instantiateInitialViewController() as! FirstViewContorller
     }
