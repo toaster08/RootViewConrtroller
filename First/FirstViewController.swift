@@ -23,4 +23,7 @@ class FirstViewContorller: UIViewController {
     @objc func tapNextButton(_ sender:UIResponder){
         RootViewContorller.root.showSecond(from: self)
     }
+    
+    
+
 }

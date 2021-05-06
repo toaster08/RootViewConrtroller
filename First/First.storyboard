@@ -23,23 +23,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br9-QS-qve">
-                                <rect key="frame" x="0.0" y="558.5" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="508.5" width="414" height="30"/>
                                 <state key="normal" title="Second"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bKt-Np-ZeR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="br9-QS-qve" firstAttribute="top" secondItem="cpE-Yi-uT6" secondAttribute="bottom" constant="100" id="CQq-tX-g5I"/>
-                            <constraint firstItem="br9-QS-qve" firstAttribute="trailing" secondItem="bKt-Np-ZeR" secondAttribute="trailing" id="LiX-Kg-RQI"/>
-                            <constraint firstItem="cpE-Yi-uT6" firstAttribute="centerX" secondItem="0gY-Zu-KI8" secondAttribute="centerX" id="Qvy-2w-p61"/>
-                            <constraint firstItem="br9-QS-qve" firstAttribute="leading" secondItem="bKt-Np-ZeR" secondAttribute="leading" id="YXL-eq-zlv"/>
-                            <constraint firstItem="cpE-Yi-uT6" firstAttribute="centerY" secondItem="0gY-Zu-KI8" secondAttribute="centerY" id="wkr-VU-0xh"/>
-                            <constraint firstItem="br9-QS-qve" firstAttribute="centerX" secondItem="0gY-Zu-KI8" secondAttribute="centerX" id="ybT-YK-BOb"/>
+                            <constraint firstItem="cpE-Yi-uT6" firstAttribute="centerX" secondItem="0gY-Zu-KI8" secondAttribute="centerX" id="DP1-9b-EmD"/>
+                            <constraint firstItem="cpE-Yi-uT6" firstAttribute="centerY" secondItem="0gY-Zu-KI8" secondAttribute="centerY" id="G9k-LS-GwX"/>
+                            <constraint firstItem="br9-QS-qve" firstAttribute="leading" secondItem="bKt-Np-ZeR" secondAttribute="leading" id="KmR-Rl-nlh"/>
+                            <constraint firstItem="br9-QS-qve" firstAttribute="top" secondItem="cpE-Yi-uT6" secondAttribute="bottom" constant="50" id="axe-bE-jPG"/>
+                            <constraint firstItem="br9-QS-qve" firstAttribute="trailing" secondItem="bKt-Np-ZeR" secondAttribute="trailing" id="cYJ-u0-xkc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="br9-QS-qve" id="y5a-9Q-fDC"/>
+                        <outlet property="nextButton" destination="br9-QS-qve" id="cxx-rq-AJy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0E-Ou-tah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

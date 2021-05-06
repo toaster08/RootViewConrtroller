@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180CAF0826443724007AC122 /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CAF0726443724007AC122 /* CountModel.swift */; };
+		180CAF0D264438BB007AC122 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CAF0C264438BB007AC122 /* ThirdViewController.swift */; };
+		180CAF112644392B007AC122 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CAF102644392B007AC122 /* Third.storyboard */; };
 		1893A5D5263EE59F009B7CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893A5D4263EE59F009B7CBA /* AppDelegate.swift */; };
 		1893A5DE263EE5A1009B7CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1893A5DD263EE5A1009B7CBA /* Assets.xcassets */; };
 		1893A5E1263EE5A1009B7CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893A5DF263EE5A1009B7CBA /* LaunchScreen.storyboard */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180CAF0726443724007AC122 /* CountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
+		180CAF0C264438BB007AC122 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		180CAF102644392B007AC122 /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		1893A5D1263EE59F009B7CBA /* RootViewControllerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RootViewControllerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893A5D4263EE59F009B7CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1893A5DD263EE5A1009B7CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,11 +51,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CAF06264436FD007AC122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180CAF0726443724007AC122 /* CountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		180CAF0B264438AA007AC122 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				180CAF0C264438BB007AC122 /* ThirdViewController.swift */,
+				180CAF102644392B007AC122 /* Third.storyboard */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		1893A5C8263EE59F009B7CBA = {
 			isa = PBXGroup;
 			children = (
-				1893A5FF263EE870009B7CBA /* Extensions */,
+				180CAF0B264438AA007AC122 /* Third */,
+				180CAF06264436FD007AC122 /* Model */,
 				1893A5EB263EE5FA009B7CBA /* Root */,
+				1893A5FF263EE870009B7CBA /* Extensions */,
 				1893A5E9263EE5E8009B7CBA /* First */,
 				1893A5EA263EE5F2009B7CBA /* Second */,
 				1893A5D3263EE59F009B7CBA /* RootViewControllerTest */,
@@ -172,6 +197,7 @@
 				1893A5E1263EE5A1009B7CBA /* LaunchScreen.storyboard in Resources */,
 				1893A5DE263EE5A1009B7CBA /* Assets.xcassets in Resources */,
 				1893A5FA263EE743009B7CBA /* First.storyboard in Resources */,
+				180CAF112644392B007AC122 /* Third.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1893A5F5263EE671009B7CBA /* SecondViewController.swift in Sources */,
+				180CAF0D264438BB007AC122 /* ThirdViewController.swift in Sources */,
 				1893A601263EE88B009B7CBA /* Storyboard+.swift in Sources */,
 				1893A5D5263EE59F009B7CBA /* AppDelegate.swift in Sources */,
 				1893A5EE263EE650009B7CBA /* RootViewController.swift in Sources */,
+				180CAF0826443724007AC122 /* CountModel.swift in Sources */,
 				1893A63226403470009B7CBA /* UserDefault+.swift in Sources */,
 				1893A5F2263EE663009B7CBA /* FirstViewController.swift in Sources */,
 			);
