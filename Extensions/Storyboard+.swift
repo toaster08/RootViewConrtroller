@@ -17,5 +17,10 @@ extension UIStoryboard {
         UIStoryboard.init(name: "Second", bundle: nil).instantiateInitialViewController() as! SecondViewContorller
     }
     
+    static var thirdViewController: ThirdViewController {
+        UIStoryboard.init(name: "Third", bundle: nil).instantiateInitialViewController() as! ThirdViewController
+    }
+    
+    
     
 }

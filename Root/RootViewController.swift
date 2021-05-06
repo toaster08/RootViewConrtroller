@@ -28,14 +28,26 @@ final class RootViewContorller {
         self.window = window
     }
     
+    
+    func showFirst(from:UIViewController){
+        let vc = FirstViewContorller.instanced()
+        show(from: from, next: vc)
+    }
+    
     func showSecond(from:UIViewController){
         let vc = SecondViewContorller.instanced()
         show(from: from, next: vc)
     }
     
-    func showFirst(from:UIViewController){
-        let vc = SecondViewContorller.instanced()
+    func showThird(from:UIViewController,countModel:CountModel) {
+        let vc = ThirdViewController.instanced(countModel:countModel)
         show(from: from, next: vc)
+    }
+    
+    
+    func reStart(){
+        UserDefaults.standard.isLogined = [true, false].randomElement()!
+        showInitialView(window: window)
     }
 
 }

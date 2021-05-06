@@ -14,6 +14,28 @@ class SecondViewContorller: UIViewController {
       return vc
     }
     
+
+    private var countModel = CountModel.init(count: 0)
+    
+    
+    @IBOutlet private weak var countLabel: UILabel!{
+        didSet{
+            countLabel.text = countModel.count.description
+        }
+        
+    }
+    
+    @IBOutlet weak var countUpButton: UIButton!{
+        didSet{
+            countUpButton.addTarget(self, action: #selector(tapToCountUp(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc private func tapToCountUp(_ sender:UIResponder){
+        countModel.count += 1
+        countLabel.text = countModel.count.description
+    }
+    
     
     @IBOutlet private weak var nextButton: UIButton!{
         didSet{
@@ -22,7 +44,9 @@ class SecondViewContorller: UIViewController {
     }
 
     @objc func tapNextButton(_ sender:UIResponder){
-        RootViewContorller.root.showFirst(from: self)
+        RootViewContorller.root.showThird(from: self,countModel: countModel)
     }
     
+ 
+        
 }

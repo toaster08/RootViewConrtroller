@@ -23,22 +23,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubO-1a-7Ak">
-                                <rect key="frame" x="0.0" y="558.5" width="414" height="30"/>
-                                <state key="normal" title="First"/>
+                                <rect key="frame" x="0.0" y="508.5" width="414" height="30"/>
+                                <state key="normal" title="Third"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-qU-sL6">
+                                <rect key="frame" x="0.0" y="638.5" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nl3-eA-8Hp">
+                                <rect key="frame" x="0.0" y="709.5" width="414" height="30"/>
+                                <state key="normal" title="CountUp"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mDp-7q-ucG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ig4-Yy-CQk" firstAttribute="centerY" secondItem="B0P-E4-hXm" secondAttribute="centerY" id="G3y-Iz-K7m"/>
-                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="centerX" secondItem="B0P-E4-hXm" secondAttribute="centerX" id="Lb9-Q7-sOE"/>
-                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="leading" secondItem="mDp-7q-ucG" secondAttribute="leading" id="UIr-6b-V0c"/>
-                            <constraint firstItem="ig4-Yy-CQk" firstAttribute="centerX" secondItem="B0P-E4-hXm" secondAttribute="centerX" id="ob7-nA-Zum"/>
-                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="top" secondItem="ig4-Yy-CQk" secondAttribute="bottom" constant="100" id="rCC-bV-Gpg"/>
-                            <constraint firstItem="mDp-7q-ucG" firstAttribute="trailing" secondItem="ubO-1a-7Ak" secondAttribute="trailing" id="vmm-xJ-sa8"/>
+                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="leading" secondItem="mDp-7q-ucG" secondAttribute="leading" id="Ard-5N-AdF"/>
+                            <constraint firstItem="nl3-eA-8Hp" firstAttribute="top" secondItem="7Og-qU-sL6" secondAttribute="bottom" constant="50" id="Fl3-33-Bpk"/>
+                            <constraint firstItem="ig4-Yy-CQk" firstAttribute="centerY" secondItem="B0P-E4-hXm" secondAttribute="centerY" id="RBz-Gw-nP6"/>
+                            <constraint firstItem="mDp-7q-ucG" firstAttribute="trailing" secondItem="7Og-qU-sL6" secondAttribute="trailing" id="Wd5-hx-BLO"/>
+                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="trailing" secondItem="mDp-7q-ucG" secondAttribute="trailing" id="ZnH-Ae-wfL"/>
+                            <constraint firstItem="7Og-qU-sL6" firstAttribute="leading" secondItem="mDp-7q-ucG" secondAttribute="leading" id="egJ-Jy-LZn"/>
+                            <constraint firstItem="7Og-qU-sL6" firstAttribute="top" secondItem="ubO-1a-7Ak" secondAttribute="bottom" constant="100" id="fN1-Fp-vks"/>
+                            <constraint firstItem="nl3-eA-8Hp" firstAttribute="leading" secondItem="mDp-7q-ucG" secondAttribute="leading" id="ggP-lb-Wub"/>
+                            <constraint firstItem="mDp-7q-ucG" firstAttribute="trailing" secondItem="nl3-eA-8Hp" secondAttribute="trailing" id="or9-6f-atM"/>
+                            <constraint firstItem="ubO-1a-7Ak" firstAttribute="top" secondItem="ig4-Yy-CQk" secondAttribute="bottom" constant="50" id="qLX-HR-Nrv"/>
+                            <constraint firstItem="ig4-Yy-CQk" firstAttribute="centerX" secondItem="B0P-E4-hXm" secondAttribute="centerX" id="qVS-tg-h15"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="7Og-qU-sL6" id="p83-xu-dl4"/>
+                        <outlet property="countUpButton" destination="nl3-eA-8Hp" id="Tny-zD-2Gd"/>
                         <outlet property="nextButton" destination="ubO-1a-7Ak" id="MEO-1c-V18"/>
                     </connections>
                 </viewController>
